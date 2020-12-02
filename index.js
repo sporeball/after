@@ -11,13 +11,18 @@
 const chalk = require("chalk");
 const execa = require("execa");
 const dayjs = require("dayjs");
-const pretty = require("pretty-ms");
+const toMS = require("@sindresorhus/to-milliseconds");
 
 var args = process.argv.slice(2);
 
 const time = args[0];
-const units = time.match(/\d+/g).map(i => +i).reverse()
-const ms = (units[0] * 1000) + (units[1] * 60000 || 0) + (units[2] * 3600000 || 0);
+const values = time.match(/\d+/g).map(i => +i);
+const units = time.match(/\D+/g);
+const ms = toMS({
+  hours: values[units.indexOf("h")] || 0,
+  minutes: values[units.indexOf("m")] || 0,
+  seconds: values[units.indexOf("s")] || 0
+})
 
 const date = dayjs().add(ms, "ms").format("MM/DD HH:mm:ss");
 
@@ -28,6 +33,6 @@ execa.node("child.js", [ms, _process, file], {
 	detached: true
 });
 
-console.log(chalk.cyan(`running ${chalk.magenta(`${_process} ${file}`)} in ${pretty(ms)} ${chalk.yellow(`(~ ${date})`)}`))
+console.log(chalk.cyan(`running ${chalk.magenta(`${_process} ${file}`)} in ${time} ${chalk.yellow(`(~ ${date})`)}`))
 
 process.exit(0);

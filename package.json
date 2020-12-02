@@ -34,9 +34,9 @@
   },
   "homepage": "https://github.com/sporeball/after#readme",
   "dependencies": {
+    "@sindresorhus/to-milliseconds": "^1.2.0",
     "chalk": "^4.1.0",
     "dayjs": "^1.9.6",
-    "execa": "^4.1.0",
-    "pretty-ms": "^7.0.1"
+    "execa": "^4.1.0"
   }
 }
