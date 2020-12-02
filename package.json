@@ -1,9 +1,9 @@
 {
-  "name": "@sporeball/in",
+  "name": "@sporeball/after",
   "version": "0.0.0",
   "description": "spawn a process after a certain amount of time",
   "bin": {
-    "in": "index.js"
+    "after": "index.js"
   },
   "engines": {
     "node": ">=10"
@@ -16,7 +16,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sporeball/in.git"
+    "url": "git+https://github.com/sporeball/after.git"
   },
   "keywords": [
     "cli-app",
@@ -30,9 +30,9 @@
   "author": "sporeball",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/sporeball/in/issues"
+    "url": "https://github.com/sporeball/after/issues"
   },
-  "homepage": "https://github.com/sporeball/in#readme",
+  "homepage": "https://github.com/sporeball/after#readme",
   "dependencies": {
     "execa": "^4.1.0"
   }

@@ -1,6 +1,6 @@
 /*
   child.js
-  in child process
+  after child process
   copyright (c) 2020 sporeball
   MIT license
 */

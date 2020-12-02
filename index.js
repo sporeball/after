@@ -2,7 +2,7 @@
 
 /*
   index.js
-  in core
+  after core
   copyright (c) 2020 sporeball
   MIT license
 */
