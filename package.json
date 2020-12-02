@@ -1,0 +1,39 @@
+{
+  "name": "@sporeball/in",
+  "version": "0.0.0",
+  "description": "spawn a process after a certain amount of time",
+  "bin": {
+    "in": "index.js"
+  },
+  "engines": {
+    "node": ">=10"
+  },
+  "files": [
+    "index.js"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sporeball/in.git"
+  },
+  "keywords": [
+    "cli-app",
+    "cli",
+    "exec",
+    "execute",
+    "spawn",
+    "child",
+    "process"
+  ],
+  "author": "sporeball",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sporeball/in/issues"
+  },
+  "homepage": "https://github.com/sporeball/in#readme",
+  "dependencies": {
+    "execa": "^4.1.0"
+  }
+}
