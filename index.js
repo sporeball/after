@@ -8,6 +8,8 @@
 */
 
 // dependencies
+const path = require("path");
+
 const chalk = require("chalk");
 const execa = require("execa");
 const dayjs = require("dayjs");
@@ -29,7 +31,7 @@ const date = dayjs().add(ms, "ms").format("MM/DD HH:mm:ss");
 const _process = args[1];
 const file = args[2];
 
-execa.node("child.js", [ms, _process, file], {
+execa.node(path.join(__dirname, "child.js"), [ms, _process, file], {
 	detached: true
 });
 
