@@ -1,7 +1,7 @@
 /*
   child.js
   after child process
-  copyright (c) 2020 sporeball
+  copyright (c) 2021 sporeball
   MIT license
 */
 
